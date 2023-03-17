@@ -139,8 +139,6 @@ public class evento_valida_tgfcab_ecomm implements EventoProgramavelJava {
 	        			BigDecimal sugestaoTipNeg = BigDecimalUtil.getValueOrZero(tgfcpl.asBigDecimal("SUGTIPNEGSAID"));
 	        			if(sugestaoTipNeg.intValue()>0) {
 	        				VO.setProperty("CODTIPVENDA", sugestaoTipNeg);
-	        			}else {
-	        				VO.setProperty("CODTIPVENDA", new BigDecimal(1263));
 	        			}
 	        		}
 	        	}
